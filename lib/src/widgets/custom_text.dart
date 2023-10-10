@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CustomText extends StatelessWidget {
   final String? text;
@@ -26,35 +27,15 @@ class CustomText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      text ?? '',
-      textAlign: textAlign,
-      maxLines: maxLines ?? 100,
-      overflow: overflow,
-      style: textStyle(
-        fontWeight: fontWeight,
-        fontSize: fontSize,
-        textColor: textColor,
-        textDecoration: textDecoration,
-        height: height,
-      ),
-    );
+    return Text(text ?? '',
+        textAlign: textAlign,
+        maxLines: maxLines ?? 100,
+        overflow: overflow,
+        style: GoogleFonts.lato(
+            fontWeight: fontWeight ?? FontWeight.w400,
+            fontSize: fontSize ?? 16,
+            color: textColor,
+            decoration: textDecoration ?? TextDecoration.none,
+            height: height));
   }
 }
-
-/// Parametros necesarios para el control del tkdjjd
-// ignore: long-parameter-list
-textStyle(
-        {FontWeight? fontWeight,
-        double? fontSize,
-        Color? textColor,
-        TextDecoration? textDecoration,
-        double? height,
-        bool? darkMode}) =>
-    TextStyle(
-        fontFamily: 'Golos',
-        fontWeight: fontWeight ?? FontWeight.w400,
-        fontSize: fontSize,
-        color: textColor,
-        decoration: textDecoration ?? TextDecoration.none,
-        height: height);
