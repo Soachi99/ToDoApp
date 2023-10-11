@@ -1,4 +1,6 @@
 {
     "welcome": "Welcome",
-    "loading": "Loading..."
+    "loading": "Loading...",
+    "yourTasks": "Your tasks",
+    "newTask": "New task"
 }

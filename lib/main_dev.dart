@@ -5,8 +5,13 @@ import 'package:flutter_flavor/flutter_flavor.dart';
 import 'package:todoapp/src/app.dart';
 
 Future<void> main() async {
-  // await Firebase.initializeApp();
-
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+      options: const FirebaseOptions(
+          apiKey: "AIzaSyBiueWq8sc13nUmubAy_zU0yll_ob3jMf4",
+          appId: "1:366491493610:android:a53cba7d06b8b0c622a393",
+          messagingSenderId: "366491493610",
+          projectId: "todoapp-d2e0a"));
   FlavorConfig(
     name: "DEV",
     variables: {},
