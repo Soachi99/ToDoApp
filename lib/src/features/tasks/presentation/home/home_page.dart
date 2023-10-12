@@ -7,7 +7,6 @@ import 'package:todoapp/generated/l10n.dart';
 import 'package:todoapp/src/features/tasks/presentation/home/widgets/custom_bar.dart';
 import 'package:todoapp/src/features/tasks/presentation/home/widgets/tasks_container.dart';
 import 'package:todoapp/src/tools/custom_colors.dart';
-import 'package:todoapp/src/widgets/custom_filter/custom_filter.dart';
 import 'package:todoapp/src/widgets/custom_text.dart';
 
 import 'home_controller.dart';
