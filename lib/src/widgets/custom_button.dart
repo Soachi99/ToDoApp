@@ -13,6 +13,9 @@ class CustomButton extends StatelessWidget {
   /// Color de la animación de carga
   final Color? loadingColor;
 
+  /// Color de la animación de carga
+  final Color? textColor;
+
   /// Ancho del botón
   final double? height;
 
@@ -34,6 +37,7 @@ class CustomButton extends StatelessWidget {
     required this.onPressed,
     this.isLoading = false,
     this.loadingColor,
+    this.textColor,
   });
 
   @override
@@ -54,7 +58,7 @@ class CustomButton extends StatelessWidget {
           child: !isLoading!
               ? CustomText(
                   label,
-                  textColor: customColors.colors[2],
+                  textColor: textColor ?? customColors.colors[2],
                   fontWeight: FontWeight.w700,
                 )
               : Center(

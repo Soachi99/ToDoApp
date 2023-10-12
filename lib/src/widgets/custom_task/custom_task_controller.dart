@@ -11,8 +11,12 @@ class CustomTaskController extends StateNotifier<CustomTaskState> {
   toogleCompleted() {
     state = state.copyWith(expand: state.expand, completed: !state.completed);
   }
+
+  setCurrentState(bool currentState) {
+    state = state.copyWith(expand: false, completed: currentState);
+  }
 }
 
 final customTaskController = StateNotifierProvider.autoDispose
-    .family<CustomTaskController, CustomTaskState, int>(
+    .family<CustomTaskController, CustomTaskState, String>(
         (ref, arg) => CustomTaskController());

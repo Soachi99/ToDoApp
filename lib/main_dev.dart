@@ -12,6 +12,7 @@ Future<void> main() async {
           appId: "1:366491493610:android:a53cba7d06b8b0c622a393",
           messagingSenderId: "366491493610",
           projectId: "todoapp-d2e0a"));
+
   FlavorConfig(
     name: "DEV",
     variables: {},
