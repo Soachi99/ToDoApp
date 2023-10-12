@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:todoapp/generated/l10n.dart';
 import 'package:todoapp/src/tools/tools.dart';
 import 'package:todoapp/src/widgets/custom_button.dart';
@@ -25,7 +26,10 @@ class CustomBar extends StatelessWidget {
             fontWeight: FontWeight.w700,
             fontSize: 24,
           ),
-          CustomButton(label: text.newTask, width: 120, onPressed: () {})
+          CustomButton(
+              label: text.newTask,
+              width: 120,
+              onPressed: () => Fluttertoast.showToast(msg: S.of(context).soon))
         ],
       ),
     );

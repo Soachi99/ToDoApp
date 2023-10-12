@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:todoapp/generated/l10n.dart';
 import 'package:todoapp/src/tools/tools.dart';
 import 'package:todoapp/src/widgets/custom_task/custom_task_controller.dart';
 import 'package:todoapp/src/widgets/custom_text.dart';
@@ -81,7 +82,10 @@ class _CustomTaskState extends ConsumerState<CustomTask> {
                           maxLines: state.expand ? 100 : 1,
                           textColor:
                               state.expand ? customColors.colors[1] : null),
-                      CustomText(state.completed ? "Completa" : "Incompleta",
+                      CustomText(
+                          state.completed
+                              ? S.of(context).completed
+                              : S.of(context).incompleted,
                           fontSize: 12,
                           textColor:
                               state.expand ? customColors.colors[1] : null)

@@ -2,5 +2,13 @@
     "welcome": "Bienvenido",
     "loading": "Cargando...",
     "yourTasks": "Tus tareas",
-    "newTask": "Nueva Tarea"
+    "newTask": "Nueva Tarea",
+    "completed": "Completa",
+    "incompleted" : "Incompleta",
+
+    "filterCompleted": "Completas",
+    "filterIncompleted": "Incompletas",
+    "filterAll" : "Todas",
+
+    "soon": "Proximamente"
 }

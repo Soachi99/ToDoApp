@@ -89,6 +89,66 @@ class S {
       args: [],
     );
   }
+
+  /// `Completed`
+  String get completed {
+    return Intl.message(
+      'Completed',
+      name: 'completed',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Incompleted`
+  String get incompleted {
+    return Intl.message(
+      'Incompleted',
+      name: 'incompleted',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Completed`
+  String get filterCompleted {
+    return Intl.message(
+      'Completed',
+      name: 'filterCompleted',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Incompleted`
+  String get filterIncompleted {
+    return Intl.message(
+      'Incompleted',
+      name: 'filterIncompleted',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `All`
+  String get filterAll {
+    return Intl.message(
+      'All',
+      name: 'filterAll',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Soon`
+  String get soon {
+    return Intl.message(
+      'Soon',
+      name: 'soon',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

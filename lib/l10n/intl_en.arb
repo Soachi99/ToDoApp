@@ -2,5 +2,13 @@
     "welcome": "Welcome",
     "loading": "Loading...",
     "yourTasks": "Your tasks",
-    "newTask": "New task"
+    "newTask": "New task",
+    "completed": "Completed",
+    "incompleted" : "Incompleted",
+
+    "filterCompleted": "Completed",
+    "filterIncompleted": "Incompleted",
+    "filterAll" : "All",
+
+    "soon": "Soon"
 }

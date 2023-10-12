@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:todoapp/generated/l10n.dart';
 import 'package:todoapp/src/tools/tools.dart';
 
 import 'package:todoapp/src/widgets/custom_button.dart';
@@ -24,21 +25,21 @@ class CustomFilter extends ConsumerWidget {
         children: [
           CustomButton(
               width: standartWidht,
-              label: "Completas",
+              label: S.of(context).filterCompleted,
               color: state.filterState == 1 ? customColors.colors[2] : null,
               textColor: state.filterState == 1 ? customColors.colors[1] : null,
               onPressed: () => onOptionSelected(
                   filterState: 1, controller: controller, callback: callback)),
           CustomButton(
               width: standartWidht,
-              label: "Incompletas",
+              label: S.of(context).filterIncompleted,
               color: state.filterState == 2 ? customColors.colors[2] : null,
               textColor: state.filterState == 2 ? customColors.colors[1] : null,
               onPressed: () => onOptionSelected(
                   filterState: 2, controller: controller, callback: callback)),
           CustomButton(
               width: standartWidht,
-              label: "Todas",
+              label: S.of(context).filterAll,
               color: state.filterState == 0 ? customColors.colors[2] : null,
               textColor: state.filterState == 0 ? customColors.colors[1] : null,
               onPressed: () => onOptionSelected(
