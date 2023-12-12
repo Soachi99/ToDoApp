@@ -1,6 +1,6 @@
 # TodoApp
 
-Proyecto que da solución a la prueba técnica para la empresa Vinnove
+Proyecto de una aplicación para llevar un track de tareas 
 
 ## Para empezar
 
